@@ -1,4 +1,5 @@
 import processing.core.PApplet;
+import java.nio.file.*;
 
 public class Ejecutable extends PApplet {
 
@@ -10,7 +11,8 @@ public class Ejecutable extends PApplet {
 	Logica log;
 
 	public void settings() {
-		fullScreen();
+		size(1200, 700);
+		System.out.println();
 	}
 
 	public void setup() {
