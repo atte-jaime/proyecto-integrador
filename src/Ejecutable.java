@@ -1,5 +1,4 @@
 import processing.core.PApplet;
-import java.nio.file.*;
 
 public class Ejecutable extends PApplet {
 
@@ -12,7 +11,6 @@ public class Ejecutable extends PApplet {
 
 	public void settings() {
 		size(1200, 700);
-		System.out.println();
 	}
 
 	public void setup() {
@@ -26,5 +24,10 @@ public class Ejecutable extends PApplet {
 
 	public void mousePressed() {
 		log.pressed();
+	}
+
+	public void keyPressed() {
+		if (key == ESC)
+			exit();
 	}
 }
